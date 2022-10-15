@@ -6,7 +6,7 @@ import {useRouter} from 'next/router'
 function BackLinks({linkList}) {
 
     return (<div className="note-footer">
-            <h3 className="backlink-heading">Link to this note</h3>
+            <h3 className="backlink-heading">Pages Connected to this note</h3>
         {(linkList != null && linkList.length > 0)
             ?
             <>
@@ -42,9 +42,9 @@ function MDContent({content, backLinks, handleOpenNewContent}) {
 
         <div className="markdown-rendered">
             <Alert severity="info">
-                <AlertTitle>Want to know more?</AlertTitle>
+                <AlertTitle>For Questions and Comments</AlertTitle>
                 🌱 <strong>Follow</strong> or <strong>DM</strong> me on Twitter at <span><a
-                href="https://twitter.com/tuancm">@tuancm</a></span>
+                href="https://twitter.com/dralsharidah">@dralsharidah</a></span>
             </Alert>
             <div dangerouslySetInnerHTML={{__html: content}}/>
             {/*<button onClick={handleInternalLinkClick}>Click me</button>*/}
@@ -54,7 +54,7 @@ function MDContent({content, backLinks, handleOpenNewContent}) {
             </div>
             <hr/>
             <footer>
-                <p>Powered by  <a href="https://github.com/TuanManhCao/digital-garden">Mind Stone</a>, © 2022</p>
+                <p>Powered by  <a href="https://alsharidah.me">ALSHARIDAH.ME</a>, © 2022</p>
             </footer>
         </div>
     );
